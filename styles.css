@@ -1,0 +1,49 @@
+h1, h2 {
+    font-weight: 100;
+    font-family: 'Playfair Display'
+}
+
+h1 {
+    font-size: x-large;
+}
+
+h2 {
+    font-size: larger;
+}
+
+.caption {
+    color: white;
+    font-size: xx-large;
+    font-family: 'Playfair Display';
+}
+
+p {
+    font-family: Arial;
+    font-size: small;
+    color: rgb(88, 88, 88);
+}
+
+.background {
+    background-color: white;
+}
+ 
+.shape, footer {
+    background-color: turquoise;
+}
+
+.shape {
+    min-height: 10vw;
+    width: 100vw;
+}
+
+.intro {
+    font-size: 0.9rem;
+}
+
+footer > p, footer > h1 {
+    color: white;
+}
+
+header {
+    background-color: white;
+}
