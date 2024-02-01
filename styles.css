@@ -1,3 +1,31 @@
+body, header, .wrapper, footer {
+    display: flex;
+}
+
+.portrait > img {
+    width: 25vw;
+    height: 40vh;
+}
+
+img {
+    min-width: 200px;
+    min-height: 150px;
+}
+
+.landscape > img {
+    width: 35vh;
+    height: 25vw;
+}
+
+body {
+    flex-direction: column;
+}
+
+header {
+    flex-direction: row-reverse;
+    height: 15vh;
+}
+
 h1, h2 {
     font-weight: 100;
     font-family: 'Playfair Display'
@@ -25,14 +53,15 @@ p {
 
 .background {
     background-color: white;
+    height: 15vh;
 }
  
-.shape, footer {
+.shape, footer, header {
     background-color: turquoise;
 }
 
 .shape {
-    min-height: 10vw;
+    min-height: 35vw;
     width: 100vw;
 }
 
