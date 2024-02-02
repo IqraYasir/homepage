@@ -1,29 +1,40 @@
-body, header, .wrapper, footer {
+body, header, footer {
     display: flex;
+}
+
+.portrait {
+    position: relative;
+    height: fit-content;
 }
 
 .portrait > img {
     width: 25vw;
-    height: 40vh;
+    height: 35vh;
+    margin-left: 70px;
+}
+
+.caption {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-size: xx-large;
+    font-family: 'Playfair Display';
+    bottom: -20px;
+    left: 80px;
 }
 
 img {
-    min-width: 200px;
     min-height: 150px;
-}
-
-.landscape > img {
-    width: 35vh;
-    height: 25vw;
 }
 
 body {
     flex-direction: column;
+    flex: 1;
 }
 
 header {
-    flex-direction: row-reverse;
-    height: 15vh;
+    margin-top: -200px;
+    justify-content: center;
+    height: fit-content;
 }
 
 h1, h2 {
@@ -39,12 +50,6 @@ h2 {
     font-size: larger;
 }
 
-.caption {
-    color: white;
-    font-size: xx-large;
-    font-family: 'Playfair Display';
-}
-
 p {
     font-family: Arial;
     font-size: small;
@@ -53,26 +58,68 @@ p {
 
 .background {
     background-color: white;
-    height: 15vh;
+    min-height: 100px;
+    min-width: 50px;
+    height: fit-content;
+    width: 400px;
+    margin: 80px 60px 0px 0px;
+    padding: 10px;
+    
 }
- 
-.shape, footer, header {
+
+.shape, footer {
     background-color: turquoise;
 }
 
 .shape {
-    min-height: 35vw;
-    width: 100vw;
+    min-height: 800px;
+    z-index: -1;
+    transform: skewY(-15deg);
+    margin-top: -550px;
 }
 
 .intro {
     font-size: 0.9rem;
 }
 
-footer > p, footer > h1 {
+main {
+    padding: 50px 40px;
+}
+
+.wrapper {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.outro, .outro > p {
     color: white;
 }
 
-header {
-    background-color: white;
+.outro {
+    padding: 50px;
+    padding-bottom: 80px;
+    min-width: 300px;
+    width: 350px;
+}
+
+footer {
+    flex-wrap: wrap;
+}
+
+.landscape > img {
+    width: 30vh;
+    height: 25vw;
+}
+
+.landscape {
+    align-self: center;
+    margin: auto;
+    margin-bottom: 80px;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-wrap: wrap;
+    }
 }
